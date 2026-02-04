@@ -5,49 +5,49 @@
   <title>Dilution Calculator (C1V1 = C2V2)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Free chemistry dilution calculator using the C1V1 = C2V2 formula. Easily calculate solution concentrations, volumes, and serial dilutions.">
-
+  
   <style>
-body {
-  font-family: Arial, sans-serif;
-  max-width: 700px;
-  margin: 20px auto;
-  padding: 20px;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
-}
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 20px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
 
-h1 {
-  text-align: center;
-  color: #1a1a1a;
-}
+    h1 {
+      text-align: center;
+      color: #1a1a1a;
+    }
 
-input {
-  width: 100px;
-  padding: 5px;
-  margin-right: 10px;
-}
+    input {
+      width: 100px;
+      padding: 5px;
+      margin-right: 10px;
+    }
 
-button {
-  padding: 8px 15px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-top: 10px;
-}
+    button {
+      padding: 8px 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
 
-button:hover {
-  background-color: #45a049;
-}
+    button:hover {
+      background-color: #45a049;
+    }
 
-#result {
-  margin-top: 20px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  background-color: #fff;
-}
-</style>
+    #result {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      background-color: #fff;
+    }
+  </style>
 </head>
 <body>
 
@@ -68,13 +68,17 @@ button:hover {
   <input type="number" step="any" id="V2"><br><br>
 
   <button type="button" onclick="calculate()">Calculate</button>
+</form>
+
+<!-- Result appears immediately after the calculator -->
+<h2 id="result"></h2>
+
+<!-- Example Section -->
 <h2>Example Usage</h2>
 <p>Suppose you have a 2M solution of NaCl (C1) and you want to dilute it to 0.5M (C2) in a final volume (V2) of 200 mL.  
 Leave V1 empty and click Calculate — the calculator will tell you how much of the original solution you need.</p>
 
-</form>
-  <h2 id="result"></h2>
-  
+<!-- How it Works Section -->
 <h2>How the Dilution Calculator Works</h2>
 <p>This calculator uses the standard C1V1 = C2V2 formula, where:</p>
 <ul>
@@ -84,7 +88,6 @@ Leave V1 empty and click Calculate — the calculator will tell you how much of 
   <li>V2 = final volume</li>
 </ul>
 <p>Simply enter any three values and leave the one you want to calculate empty.</p>
-
 
 <script>
 function calculate() {
@@ -113,4 +116,3 @@ function calculate() {
 
 </body>
 </html>
-
